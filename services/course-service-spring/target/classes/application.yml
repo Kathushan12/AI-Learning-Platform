@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: ${COURSE_DB_URL}
+    username: ${COURSE_DB_USER}
+    password: ${COURSE_DB_PASS}
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+userService:
+  baseUrl: http://localhost:8082
